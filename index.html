@@ -91,8 +91,6 @@
         <select id="deposit-method">
             <option value="MPESA">MPESA</option>
             <option value="Airtel Money">Airtel Money</option>
-            <option value="PayPal">PayPal</option>
-            <option value="Bank">Bank</option>
         </select>
         <input type="number" id="deposit-amount" placeholder="Amount (1000 - 250000)" min="1000" max="250000">
         <button class="btn" onclick="processDeposit()">Submit</button>
@@ -103,8 +101,6 @@
         <select id="withdraw-method">
             <option value="MPESA">MPESA</option>
             <option value="Airtel Money">Airtel Money</option>
-            <option value="PayPal">PayPal</option>
-            <option value="Bank">Bank</option>
         </select>
         <input type="text" id="withdraw-phone" placeholder="Phone Number (0712345678)">
         <input type="text" id="withdraw-holder-name" placeholder="Account Holder Name">
@@ -118,7 +114,7 @@
     </div>
     
     <div id="success" class="container hidden">
-        <h2>✅ Transaction Successful</h2>
+        <h2>Transaction Successful</h2>
         <p>Your transfer has been successfully completed.</p>
         <p><span id="beneficiary"></span> has received KES <span id="trans-amount"></span>.</p>
         <p>Transaction ID: TXN<span id="txn-id"></span></p>
